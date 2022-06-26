@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WELCOME TO THE FORM</title>
+</head>
+<body bgcolor="#8a2be2">
+    <center>
+        <h1>
+            Severity Prediction Model for K.G.M hospital
+        </h1>
+        <form action="{{url_for('predict')}}" method="POST">
+              <input type="text" name="Data_value" placeholder="Data_Value"><br>
+              <input type="text" name="Upper_CI" placeholder="Upper_CI"><br>
+              <input type="text" name="Lower_CI" placeholder="Lower_CI"><br>
+              <input type="text" name="Validated" placeholder="Validated"><br>
+              <input type="submit" value="Submit">
+        </form>
+    </center>
+</body>
+</html>
